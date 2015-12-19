@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>d6d21f76-9e55-4d3c-ac59-04f71130a0b1</PackageIdentityName>
-    <IntermediateOutputPath>c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>4650937343FB28BE662D61A7A9956D28FF1E857E5A620531E0EB392F77BDFED1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>d6d21f76-9e55-4d3c-ac59-04f71130a0b1_1.0.0.0_neutral__9p449qkf2f4d2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>d6d21f76-9e55-4d3c-ac59-04f71130a0b1_9p449qkf2f4d2!App</RegisteredUserModeAppID>
@@ -19,64 +19,64 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-19T08:07:20.622</Modified>
+      <Modified>2015-12-19T13:02:03.318</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\QuickTester.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\QuickTester.Windows.exe">
       <PackagePath>QuickTester.Windows.exe</PackagePath>
-      <Modified>2015-12-19T08:28:55.235</Modified>
+      <Modified>2015-12-19T14:12:53.238</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:16:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:16:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:16:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-06T20:16:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\QuickTester.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\QuickTester.Windows.xr.xml">
       <PackagePath>QuickTester.Windows.xr.xml</PackagePath>
-      <Modified>2015-12-19T08:27:21.337</Modified>
+      <Modified>2015-12-19T10:22:57.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2015-12-19T08:27:21.384</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\addaccount.xbf">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\addaccount.xbf">
       <PackagePath>addaccount.xbf</PackagePath>
       <Modified>2015-12-19T08:27:21.424</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
       <Modified>2015-12-19T08:27:21.433</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\student_page.xbf">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\student_page.xbf">
       <PackagePath>student_page.xbf</PackagePath>
-      <Modified>2015-12-19T08:27:21.439</Modified>
+      <Modified>2015-12-19T13:40:49.294</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\teacher_page.xbf">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\teacher_page.xbf">
       <PackagePath>teacher_page.xbf</PackagePath>
-      <Modified>2015-12-19T08:27:21.447</Modified>
+      <Modified>2015-12-19T10:25:22.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-19T08:07:20.300</Modified>
+      <Modified>2015-12-19T13:02:02.966</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

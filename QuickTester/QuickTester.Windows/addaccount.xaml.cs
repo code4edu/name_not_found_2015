@@ -112,7 +112,7 @@ namespace QuickTester
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            new_login = textBox.Text;
+            new_login = "l_" + textBox.Text;
         }
 
         private void textBox1_TextChanged(object sender, TextChangedEventArgs e)

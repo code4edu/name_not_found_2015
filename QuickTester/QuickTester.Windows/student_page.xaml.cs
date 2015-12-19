@@ -102,5 +102,107 @@ namespace QuickTester
         }
 
         #endregion
+
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        Dictionary<string, List<string>> real_questions = new Dictionary<string, List<string>>();
+        Dictionary<string, int> right = new Dictionary<string, int>();
+
+        
+
+
+        public void GetData()
+        {
+            foreach(var el in Windows.Storage.ApplicationData.Current.LocalSettings.Values)
+            {
+                if (!data.ContainsKey(el.Key))
+                    data.Add(el.Key, el.Value);
+            }
+        }
+            
+
+        private void get_result_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void load_test_Click(object sender, RoutedEventArgs e)
+        {
+            GetData();
+
+            #region
+            int countOfQuestions = 5;
+
+            
+            MyClass[] items = new MyClass[countOfQuestions];
+
+            for (int i = 0; i < items.Length; i++)
+                items[i] = new MyClass();
+
+            //for (int i = 0; i < items.Count; i++)
+            //    items[i] = new MyClass();
+
+            int counter = 0;
+            do
+            {
+                foreach(var el in data)
+                {
+                    string t = (string)el.Value;
+                    if (t.Contains("#"))
+                    {
+                        if (!t.Contains("Номер правильного ответа"))
+                        { 
+                        string[] answers = t.Split(new char[] { '#' }, StringSplitOptions.RemoveEmptyEntries);
+                        items[counter].question = el.Key;
+
+                        items[counter].rightanswer = int.Parse(answers[answers.Length - 1]);
+                        for (int j = 0; j < answers.Length - 1; j++)
+                        {
+                            items[counter].answers[j] = answers[j];
+                        }
+                    }
+                    }
+                    
+                }
+                counter++;
+                
+            } while (counter < 5);
+            #endregion
+
+            StackPanel[] tests = new StackPanel[5];
+            CheckBox[] checks = new CheckBox[4];
+            TextBlock[] blocks = new TextBlock[5];
+            for (int i = 0; i < checks.Length; i++)
+                checks[i] = new CheckBox();
+
+            for (int i = 0; i < tests.Length; i++)
+            {
+                tests[i] = new StackPanel();
+                blocks[i] = new TextBlock();
+            }
+            TextBlock first_q = new TextBlock();
+            first_q.Text = items[0].question;
+            for(int i = 0; i < 4; i++)
+            {
+                checks[i].Content = items[0].answers[i];
+            }
+            StackPanel pt = new StackPanel();
+            pt.Children.Add(first_q);
+            for (int i = 0; i < 4; i++)
+            {
+                pt.Children.Add(checks[i]);
+            }
+            place_for_test.Children.Add(pt);
+
+        }
+
+
+    }
+
+    public class MyClass
+    {
+        public string question;
+        public string[] answers = new string[4];
+        public int rightanswer;
+        public MyClass() { }
     }
 }

@@ -55,6 +55,7 @@ namespace QuickTester
         private void button_student_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(student_page));
+            
         }
     }
 }

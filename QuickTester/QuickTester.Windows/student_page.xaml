@@ -49,7 +49,8 @@
         <Grid x:Name="content" HorizontalAlignment="Left" Margin="310,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="749">
             <TextBlock x:Name="content_header" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Тест" VerticalAlignment="Top" FontSize="66.667"/>
         </Grid>
-        <Button x:Name="load_test" Content="Создать&#xD;&#xA;" HorizontalAlignment="Left" Margin="16,252,0,308" Grid.Row="1" VerticalAlignment="Center" FontSize="32" Height="68" Width="176"/>
-        <Button x:Name="get_result"  Content="Результат" HorizontalAlignment="Left" Margin="16,338,0,0" Grid.Row="1" FontSize="32" VerticalAlignment="Top" Height="68"/>
+        <Button x:Name="load_test" Content="Создать&#xD;&#xA;" HorizontalAlignment="Left" Margin="16,252,0,308" Grid.Row="1" VerticalAlignment="Center" FontSize="32" Height="68" Width="176" Click="load_test_Click"/>
+        <Button x:Name="get_result"  Content="Результат" HorizontalAlignment="Left" Margin="16,338,0,0" Grid.Row="1" FontSize="32" VerticalAlignment="Top" Height="68" Click="get_result_Click"/>
+        <Grid x:Name="place_for_test" HorizontalAlignment="Center" Height="528" Margin="383,95,383,5" Grid.Row="1" VerticalAlignment="Center" Width="600"/>
     </Grid>
 </Page>

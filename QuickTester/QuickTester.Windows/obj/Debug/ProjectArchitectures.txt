@@ -1,1 +1,1 @@
-c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\QuickTester.Windows.csproj;neutral
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\QuickTester.Windows.csproj;neutral

@@ -1,8 +1,10 @@
-﻿namespace QuickTester.Tests
+﻿using QuickTester.Questions;
+
+namespace QuickTester.Tests
 {
     public interface ITest
     {
         void CreateTest();
-        int CountRightAnswers(IQuestion question);
+        void CountRightAnswers(QuestionWithChooseVariantsOfAnswers question, object i);
     }
 }
