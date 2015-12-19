@@ -25,6 +25,35 @@ namespace QuickTester
         public MainPage()
         {
             this.InitializeComponent();
+            Windows.Storage.ApplicationData.Current.LocalSettings.Values["admin"] = "admin";
+        }
+
+        private void button_teacher_Click(object sender, RoutedEventArgs e)
+        {
+            var val = (string)Windows.Storage.ApplicationData.Current.LocalSettings.Values["admin"];
+            string pass = password.Text;
+            string log = login.Text;
+
+            var settings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (!settings.Values.ContainsKey(log))
+            {
+                login.Text = "неверный логин!";
+            }
+
+            if (settings.Values.ContainsKey(log) && val == pass)
+            {
+                this.Frame.Navigate(typeof(teacher_page));
+            }  
+            else
+            {
+                password.Text = "неверный пароль!";               
+            }      
+                      
+        }
+
+        private void button_student_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(student_page));
         }
     }
 }

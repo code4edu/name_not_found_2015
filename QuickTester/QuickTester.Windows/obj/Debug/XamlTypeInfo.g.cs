@@ -124,15 +124,29 @@ namespace QuickTester.QuickTester_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[10];
             _typeNameTable[0] = "QuickTester.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "QuickTester.student_page";
+            _typeNameTable[4] = "QuickTester.Common.ObservableDictionary";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "QuickTester.Common.NavigationHelper";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "QuickTester.teacher_page";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[10];
             _typeTable[0] = typeof(global::QuickTester.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::QuickTester.student_page);
+            _typeTable[4] = typeof(global::QuickTester.Common.ObservableDictionary);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::QuickTester.Common.NavigationHelper);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::QuickTester.teacher_page);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -168,6 +182,16 @@ namespace QuickTester.QuickTester_Windows_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::QuickTester.MainPage(); }
+        private object Activate_3_student_page() { return new global::QuickTester.student_page(); }
+        private object Activate_4_ObservableDictionary() { return new global::QuickTester.Common.ObservableDictionary(); }
+        private object Activate_9_teacher_page() { return new global::QuickTester.teacher_page(); }
+        private void MapAdd_4_ObservableDictionary(object instance, object key, object item)
+        {
+            var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
+            var newKey = (global::System.String)key;
+            var newItem = (global::System.Object)item;
+            collection.Add(newKey, newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,16 +217,109 @@ namespace QuickTester.QuickTester_Windows_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  QuickTester.student_page
+                userType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_student_page;
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  QuickTester.Common.ObservableDictionary
+                userType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.DictionaryAdd = MapAdd_4_ObservableDictionary;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  String
+                xamlType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  QuickTester.Common.NavigationHelper
+                userType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  QuickTester.teacher_page
+                userType = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_teacher_page;
+                userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("NavigationHelper");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_student_page_DefaultViewModel(object instance)
+        {
+            var that = (global::QuickTester.student_page)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_1_student_page_NavigationHelper(object instance)
+        {
+            var that = (global::QuickTester.student_page)instance;
+            return that.NavigationHelper;
+        }
+        private object get_2_teacher_page_DefaultViewModel(object instance)
+        {
+            var that = (global::QuickTester.teacher_page)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_3_teacher_page_NavigationHelper(object instance)
+        {
+            var that = (global::QuickTester.teacher_page)instance;
+            return that.NavigationHelper;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "QuickTester.student_page.DefaultViewModel":
+                userType = (global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("QuickTester.student_page");
+                xamlMember = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "QuickTester.Common.ObservableDictionary");
+                xamlMember.Getter = get_0_student_page_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "QuickTester.student_page.NavigationHelper":
+                userType = (global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("QuickTester.student_page");
+                xamlMember = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlMember(this, "NavigationHelper", "QuickTester.Common.NavigationHelper");
+                xamlMember.Getter = get_1_student_page_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "QuickTester.teacher_page.DefaultViewModel":
+                userType = (global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("QuickTester.teacher_page");
+                xamlMember = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "QuickTester.Common.ObservableDictionary");
+                xamlMember.Getter = get_2_teacher_page_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "QuickTester.teacher_page.NavigationHelper":
+                userType = (global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("QuickTester.teacher_page");
+                xamlMember = new global::QuickTester.QuickTester_Windows_XamlTypeInfo.XamlMember(this, "NavigationHelper", "QuickTester.Common.NavigationHelper");
+                xamlMember.Getter = get_3_teacher_page_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

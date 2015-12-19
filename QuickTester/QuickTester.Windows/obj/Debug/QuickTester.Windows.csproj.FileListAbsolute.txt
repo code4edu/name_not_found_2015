@@ -30,3 +30,13 @@ c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTes
 c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\qualifiers.txt.intermediate
 c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\ProjectArchitectures.txt
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\teacher_page.xbf
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\teacher_page.g.i.cs
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\teacher_page.g.cs
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\teacher_page.xaml
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\teacher_page.xbf
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\student_page.xbf
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.g.i.cs
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.g.cs
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.xaml
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.xbf
