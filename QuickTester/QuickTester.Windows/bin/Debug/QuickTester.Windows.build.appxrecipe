@@ -43,8 +43,17 @@
     <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\addaccount.xbf">
+      <PackagePath>addaccount.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\student_page.xbf">
+      <PackagePath>student_page.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\teacher_page.xbf">
+      <PackagePath>teacher_page.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
