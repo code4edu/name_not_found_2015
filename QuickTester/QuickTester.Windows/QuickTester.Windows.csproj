@@ -104,8 +104,18 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <SDKReference Include="Microsoft.VCLibs, version=12.0">
+      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
+    </SDKReference>
+    <SDKReference Include="SQLite.WinRT81, Version=3.9.2">
+      <Name>SQLite for Windows Runtime %28Windows 8.1%29</Name>
+    </SDKReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseWork.cs" />
+    <Compile Include="Questions\QuestionWithoutVariantsOfAnswer.cs" />
+    <Compile Include="Questions\StructAnswer.cs" />
+    <Compile Include="Questions\IQuestion.cs" />
     <Compile Include="addaccount.xaml.cs">
       <DependentUpon>addaccount.xaml</DependentUpon>
     </Compile>
@@ -117,6 +127,11 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions\QuestionWithChooseVariantsOfAnswers.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="Tests\ITest.cs" />
+    <Compile Include="Tests\Test.cs" />
     <Compile Include="student_page.xaml.cs">
       <DependentUpon>student_page.xaml</DependentUpon>
     </Compile>
@@ -128,6 +143,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="packages.config" />
     <None Include="QuickTester.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
