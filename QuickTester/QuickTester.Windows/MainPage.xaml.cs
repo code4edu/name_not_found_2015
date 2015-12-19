@@ -25,6 +25,9 @@ namespace QuickTester
         public MainPage()
         {
             this.InitializeComponent();
+
         }
+
+
     }
 }
