@@ -21,8 +21,10 @@ namespace QuickTester
     /// <summary>
     /// Основная страница, которая обеспечивает характеристики, являющимися общими для большинства приложений.
     /// </summary>
-    public sealed partial class teacher_page : Page
+    public sealed partial class addaccount : Page
     {
+        string new_password;
+        string new_login;
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
@@ -45,7 +47,7 @@ namespace QuickTester
         }
 
 
-        public teacher_page()
+        public addaccount()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
@@ -103,9 +105,25 @@ namespace QuickTester
 
         #endregion
 
+        private void pageTitle_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(teacher_page));
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            new_login = textBox.Text;
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            new_password = textBox1.Text;
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(addaccount));
+            Windows.Storage.ApplicationData.Current.LocalSettings.Values[new_login] = new_password;
+            this.Frame.Navigate(typeof(teacher_page));
         }
     }
 }

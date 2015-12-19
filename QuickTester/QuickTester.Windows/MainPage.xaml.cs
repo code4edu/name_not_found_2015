@@ -35,12 +35,13 @@ namespace QuickTester
             string log = login.Text;
 
             var settings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            var passes = Windows.Storage.ApplicationData.Current.LocalSettings.Values;
             if (!settings.Values.ContainsKey(log))
             {
                 login.Text = "неверный логин!";
             }
 
-            if (settings.Values.ContainsKey(log) && val == pass)
+            if (settings.Values.ContainsKey(log) && (string)Windows.Storage.ApplicationData.Current.LocalSettings.Values[log] == pass)
             {
                 this.Frame.Navigate(typeof(teacher_page));
             }  

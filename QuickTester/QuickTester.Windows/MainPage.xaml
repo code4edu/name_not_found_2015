@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="618,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="120"/>
         <Grid x:Name="frontpage" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="748" Width="1346">
-            <TextBlock x:Name="QuickTest" Margin="334,288,328,0" TextWrapping="Wrap" Text="QuickTester" VerticalAlignment="Top" FontSize="133.333" HorizontalAlignment="Center" Width="684" Style="{StaticResource HeaderTextBlockStyle}" RenderTransformOrigin="0.501,2.032"/>
+            <TextBlock x:Name="QuickTest" Margin="334,288,328,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="133.333" HorizontalAlignment="Center" Width="684" Style="{StaticResource HeaderTextBlockStyle}" RenderTransformOrigin="0.501,2.032" Text="TestCreator"/>
             <TextBox x:Name="login" HorizontalAlignment="Left" Margin="461,383,0,0" TextWrapping="Wrap" Text="логин" VerticalAlignment="Top" FontSize="26.667" Width="342" FontFamily="Segoe UI Semibold"/>
             <TextBox x:Name="password" HorizontalAlignment="Left" Margin="461,448,0,0" TextWrapping="Wrap" Text="пароль" VerticalAlignment="Top" FontSize="26.667" Width="342" FontFamily="Segoe WP Semibold"/>
             <Button x:Name="button_teacher" Content="Войти" HorizontalAlignment="Left" Margin="492,514,0,0" VerticalAlignment="Top" Width="103" FontSize="24" Click="button_teacher_Click"/>

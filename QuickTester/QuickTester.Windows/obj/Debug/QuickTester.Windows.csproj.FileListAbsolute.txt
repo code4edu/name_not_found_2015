@@ -40,3 +40,8 @@ c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTes
 c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.g.cs
 c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.xaml
 c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\student_page.xbf
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\bin\Debug\addaccount.xbf
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\addaccount.g.i.cs
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\addaccount.g.cs
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\addaccount.xaml
+c:\users\виктор\documents\visual studio 2015\Projects\QuickTester\QuickTester\QuickTester.Windows\obj\Debug\addaccount.xbf
